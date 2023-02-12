@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+
+  <AddIn Type="Application">
+    <Name>TwentyTwo Sample</Name>
+    <Assembly>WPFDockablePaneAddIns2.dll</Assembly>
+    <AddInId>3DCB8B83-B50B-4F4A-84A6-9F0E1310E8D3</AddInId>
+    <FullClassName>WPFDockablePaneAddIns2.MainClass</FullClassName>
+    <VendorId>TwentyTwo</VendorId>
+    <VendorDescription>twentytwo, https://twentytwo.space</VendorDescription>
+  </AddIn>
+
+</RevitAddIns>

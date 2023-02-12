@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.2092
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDockablePaneAddIns2", "WPFDockablePaneAddIns2\WPFDockablePaneAddIns2.csproj", "{09F6F739-AE23-4C0F-B528-7CB2D5F2297A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09F6F739-AE23-4C0F-B528-7CB2D5F2297A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F6F739-AE23-4C0F-B528-7CB2D5F2297A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F6F739-AE23-4C0F-B528-7CB2D5F2297A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F6F739-AE23-4C0F-B528-7CB2D5F2297A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C46C009-7909-47D4-9804-FC28338C41FB}
+	EndGlobalSection
+EndGlobal

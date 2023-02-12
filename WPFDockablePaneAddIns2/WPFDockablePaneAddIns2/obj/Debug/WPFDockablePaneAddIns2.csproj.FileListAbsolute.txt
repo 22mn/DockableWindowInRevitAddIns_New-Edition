@@ -1,0 +1,13 @@
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\bin\Debug\WPFDockablePaneAddIns2.dll
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\bin\Debug\WPFDockablePaneAddIns2.pdb
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\obj\Debug\WPFDockablePaneAddIns2.csprojAssemblyReference.cache
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\obj\Debug\DockablePaneViewer.g.cs
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\obj\Debug\WPFDockablePaneAddIns2_MarkupCompile.cache
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\obj\Debug\WPFDockablePaneAddIns2_MarkupCompile.lref
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\obj\Debug\DockablePaneViewer.baml
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\obj\Debug\WPFDockablePaneAddIns2.g.resources
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\obj\Debug\WPFDockablePaneAddIns2.Resource.resources
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\obj\Debug\WPFDockablePaneAddIns2.csproj.GenerateResource.cache
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\obj\Debug\WPFDockablePaneAddIns2.csproj.CoreCompileInputs.cache
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\obj\Debug\WPFDockablePaneAddIns2.dll
+D:\SANDBAG\TwentyTwo\TwentyTwo_Tutorial\WPFDockablePaneAddIns2\WPFDockablePaneAddIns2\obj\Debug\WPFDockablePaneAddIns2.pdb
