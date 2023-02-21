@@ -6,47 +6,55 @@ using System.Windows.Controls;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using System.Reflection;
+using System.Windows.Navigation;
 
 namespace WPFDockablePaneAddIns2
 {
     /// <summary>
     /// Interaction logic for DockablePaneViewer.xaml
     /// </summary>
-    public partial class DockablePaneViewer : UserControl, IDockablePaneProvider
+    public partial class DockablePaneViewer : Page, IDockablePaneProvider
     {
         public DockablePaneViewer()
         {
             //initialize wpf control
             InitializeComponent();
 
-            // navigated event register
             // to hide unwanted JS Script pop-ups
-            wb.Navigated += (a, b) => { HideScriptErrors(wb, true); };
+            wb.Loaded += (a, b) => { HideJsScriptErrors(wb, true); };
         }
 
-        // callback method
-        public void HideScriptErrors(WebBrowser wb, bool hide)
+        // hidejsscript method
+        public void HideJsScriptErrors(WebBrowser wb, bool hide)
         {
-            // get webbrowser's a private field / _axIWebBrowser2
-            // field search included instance & non-public members /private field
-            FieldInfo fiComWebBrowser = typeof(WebBrowser).GetField("_axIWebBrowser2",
-                BindingFlags.Instance | BindingFlags.NonPublic);
-            if (fiComWebBrowser == null) return;
+            // IWebBrowser2 interface
+            // Exposes methods that are implemented by the 
+            // WebBrowser control
+            // Searches for the specified field, using the 
+            // specified binding constraints.
+            FieldInfo fld = typeof(WebBrowser).GetField(
+              "_axIWebBrowser2",
+              BindingFlags.Instance | BindingFlags.NonPublic);
 
-            // get COM webbrowser obj
-            var objComWebBrowser = fiComWebBrowser.GetValue(wb);
-            if (objComWebBrowser == null)
+            if (null != fld)
             {
-                // in case too early
-                wb.Loaded += (o, s) => HideScriptErrors(wb, hide);
-                return;
+                object obj = fld.GetValue(wb);
+                if (null != obj)
+                {
+                    // Silent: Sets or gets a value that indicates 
+                    // whether the object can display dialog boxes.
+                    // HRESULT IWebBrowser2::get_Silent(VARIANT_BOOL *pbSilent);
+                    // HRESULT IWebBrowser2::put_Silent(VARIANT_BOOL bSilent);
+                    obj.GetType().InvokeMember("Silent",
+                      BindingFlags.SetProperty, null, obj,
+                      new object[] { true });
+                }
             }
-            // invokes the specified member, using the specified binding constraints 
-            // and matching the specified argument list
-            objComWebBrowser.GetType().InvokeMember("Silent", BindingFlags.SetProperty,
-                null, objComWebBrowser, new object[] { hide });
+
+            wb.Navigated += (a, b) => { HideJsScriptErrors(wb, hide); };
         }
 
+        // setupdockablepane abstract method
         public void SetupDockablePane(DockablePaneProviderData data)
         {
             // wpf object with pane's interface

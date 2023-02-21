@@ -1,11 +1,11 @@
-﻿<UserControl x:Class="WPFDockablePaneAddIns2.DockablePaneViewer"
+﻿<Page x:Class="WPFDockablePaneAddIns2.DockablePaneViewer"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WPFDockablePaneAddIns2"
-             mc:Ignorable="d" Height="500" Width="350">
+             mc:Ignorable="d" Height="500" Width="350" >
     <Grid>
         <WebBrowser Name="wb" Source="https://twentytwo.space/" />
     </Grid>
-</UserControl>
+</Page>

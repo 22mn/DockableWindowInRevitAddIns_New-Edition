@@ -63,8 +63,10 @@ namespace WPFDockablePaneAddIns2
         // register dockable pane 
         public Result RegisterDockablePane(UIControlledApplication application)
         {
+            // dockablepaneviewer (customcontrol)
             DockablePaneViewer window = new DockablePaneViewer();
 
+            // register in application with a new guid
             DockablePaneId dockID = new DockablePaneId(new Guid("{29F293CF-5486-45CB-8C10-60CF2A33DDAB}"));
             try
             {
